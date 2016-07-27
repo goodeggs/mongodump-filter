@@ -1,0 +1,44 @@
+{
+  "name": "mongodump-filter",
+  "version": "1.0.0",
+  "description": "filter mongodump BSON files by timestamp",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "build": "babel -d . src/",
+    "test": "npm run build && ./bin/mongodump-filter | grep 'duration'"
+  },
+  "bin": {
+    "mongodump-filter": "./bin/mongodump-filter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodeggs/mongodump-filter.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodump",
+    "bson"
+  ],
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goodeggs/mongodump-filter/issues"
+  },
+  "homepage": "https://github.com/goodeggs/mongodump-filter",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "dependencies": {
+    "bson": "^0.5.2",
+    "bson-stream": "0.0.8",
+    "parse-duration": "^0.1.1",
+    "through2": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
