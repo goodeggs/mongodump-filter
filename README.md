@@ -9,7 +9,7 @@ A utility to filter MongoDB BSON files by duration.
 
 ## Background
 
-MongoDB removed the `--filter` flag from `mongodump` in version 3.0.  We used this to trim very large collections to a smaller recent set of data.  (Our old filter expression was something like `{_id: {$gte: ObjectId('6-months-ago')}}`.)  This program is a replacement for that specific use-case, though I'd be more than happy to have folks extend it to do more things.
+MongoDB removed the `--filter` flag from `mongorestore` in version 3.0.  We used this to trim very large collections to a smaller recent set of data.  (Our old filter expression was something like `{_id: {$gte: ObjectId('6-months-ago')}}`.)  This program is a replacement for that specific use-case, though I'd be more than happy to have folks extend it to do more things.
 
 ## Install
 
