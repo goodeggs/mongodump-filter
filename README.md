@@ -32,5 +32,5 @@ $ mongodump-filter 30d < users.bson > users.30d.bson
 [license-badge]: http://img.shields.io/badge/license-mit-blue.svg?style=flat-square
 [license-link]: LICENSE.md
 [hiring-badge]: https://img.shields.io/badge/we're_hiring-yes-brightgreen.svg?style=flat-square
-[hiring-link]: http://goodeggs.jobscore.com/?detail=Open+Source&sid=161
+[hiring-link]: http://careers.goodeggs.com?utm_source=github&utm_campaign=open-source
 
