@@ -31,8 +31,8 @@
     "babel-preset-es2015": "^6.9.0"
   },
   "dependencies": {
-    "bson": "^0.5.2",
-    "bson-stream": "0.0.8",
+    "bson": "^1.0.5",
+    "bson-stream": "git+https://github.com/goodeggs/node-bson-stream#7e2d5583ebb4425e8a3b541cd630e749dc456508",
     "parse-duration": "^0.1.1",
     "through2": "^2.0.1"
   },

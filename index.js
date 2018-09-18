@@ -49,7 +49,7 @@ var opts = parseOpts(process.argv.slice(2));
 var BSON = new _bson2.default.BSONPure.BSON();
 var CUTOFF_ID = _bson2.default.ObjectId.createFromTime((Date.now() - opts.cutoff) / 1000);
 
-process.stdin.pipe(new _bsonStream2.default()).pipe(_through2.default.obj(function (obj, enc, cb) {
+process.stdin.pipe(new _bsonStream2.default({ BSON: BSON })).pipe(_through2.default.obj(function (obj, enc, cb) {
   if (obj._id >= CUTOFF_ID) this.push(BSON.serialize(obj));
   cb();
 })).pipe(process.stdout);
